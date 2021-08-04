@@ -170,7 +170,7 @@ elif func_select == 2:
         lesson_random = random.randint(1, 20)
         words_random = random.randint(0, 3)
 
-        if count == 4:
+        if count == exam_num:
             break
 
         if [lesson_random, words_random] in words_exist:
