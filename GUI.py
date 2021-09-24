@@ -1,3 +1,5 @@
+from tkinter import *
+from tkinter import ttk, messagebox, Entry
 import random
 
 words = {
@@ -11,7 +13,7 @@ words = {
         "lesson_2": [
             ["假如你让他待在你家，你就是在自找麻烦。（ask for）", "If you let him stay at your home, you are asking for trouble."],
             ["善于学习语言的人能够把他们的错误变成通向成功的一大步。（turn...into）", "Good language learners can turn their mistakes into a big step toward their success"],
-            ["这次事故（accident）给了他一个教训，从此他再也不会酒后驾车了。（teach someone a lesson）", "The accident taught him a lesson, and from then on, he has never driven a car after drinking."],
+            ["这次事故（accident）给了他一个教训，从此他再也不会酒后驾车了。（teach someone a lesson）", "The accident taught him a lesson, and from then on, he would never drive a car after drinking"],
             ["我们都应该以李明为榜样，学好英语。（take a leaf out of someone's book）", "We should all take a leaf out of Li Ming's book and learn English well."]
         ],
         "lesson_3": [
@@ -21,16 +23,16 @@ words = {
             ["我们应该听从这位老人的劝告，现在就回家去。（take someone's advice）", "We should take the old man's advice and go home right now."]
         ],
         "lesson_4": [
-            ["老师对学生上课迟到很生气，就把那些迟到的学生关在了门外。(shut out)", "The teacher felt soangry with the students for being late that he/she shut them out."],
-            ["小男孩伸出一只手去拿桌子上的书。(reach for)", "The young boy reached for the book on the desk with one of his hands"],
-            ["你们不应该在上班时间玩电脑游戏。(at work)", "You are not supposed to play computer games while at wo"],
-            ["经理亲自出马参加面试。(in person)", "The manager took part in the interview in person."]
+            ["虽然有战争的威胁（threat），人们仍一如既往地工作着。（go about）", "Despite the threat of war, people went about their work as usual."],
+            ["请允许我就这些问题讲几句话。（allow somebody to do）", "Please allow me to say a few words about the problems."],
+            ["她站起身来惊讶地盯着我。（stare at）", "She stood up and stared at me in surprise."],
+            ["大火迅速蔓延到大楼的其他部分。（spread）", "Fire quickly spread to the other parts of the building."]
         ],
         "lesson_5": [
-            ["二十年后，李娜脱颖而出成为中国最伟大的女子网球运动员。(stand out)", "Twenty years later, Li Na stands out as the greatest woman tennis player in China."],
-            ["老师鼓励这个男孩学画画，并告诉他说他是独一无二的。(one-of-a-kind)", "The teacher encouraged the boy to learn to draw and told him he was one-of-a-kind"],
-            ["如果你不喜欢这个计划，你可以退出。(drop out)", "If you don't like the plan, you can drop out."],
-            ["难道你相信他？我敢肯定他知道的比他说出来的多。(let on)", "Do you believe him?I'm sure he knows more than he's letting on."]
+            ["人们期望看到有更多的优秀球员到国外去打篮球。（look forward to）", "People look forward to seeing more excellent players play basketball abroad."],
+            ["球迷们都围着他要签名。（surround）", "The football fans surrounded him and asked for his signature."],
+            ["她没有足够的力气来推开这扇门。（strength）", "She doesn't have enough strength to push this door open."],
+            ["你应该意识到担心是无济于事的，你该做点什么才行。（aware）", "You should be aware that it is no use worrying; you need to do something about it."]
         ],
         "lesson_6": [
             ["政府要在附近（neighborhood）建一个新的购物中心。（put up）", "The government is going to put up a new shopping center in the neighborhood."],
@@ -39,10 +41,10 @@ words = {
             ["成功是不能用（in terms of）金钱来衡量的。（measure）", "Success cannot be measured in terms of money."]
         ],
         "lesson_7": [
-            ["最好的办法是学生和老师都参与课外活动(get involved in)", "The best way is that both students and teachers get involved in extracurricular activities."],
-            ["平安夜是全体家庭成员欢聚一堂的温馨(heart-warming)时刻。(gather together)", "Christmas Eve is a heart-warming time for the family members to gather together."],
-            ["我认为我们可以通过参加学校的社会活动接触社会和他人。(get in touch with)", "I think we can get in touch with the world and others through social activities on campus"],
-            ["人们住在这座古老的小镇里，生活简单安宁,四周树木环绕。(surround)", "People live in this old small town，having a simple and peaceful life， surrounded by trees"]
+            ["根据一个古老的习俗，新娘应该戴婚礼面纱。（according to）", "According to an old custom, the bride should wear a wedding veil."],
+            ["“4”这个数字在中文里听上去与“死”很接近。（sound close to）", """"4" is a number that sounds close to the word "death" in Chinese."""],
+            ["在欢迎会上，学生代表上台发了言。（reception）", "At the welcome reception, a student representative made a speech."],
+            ["买衬衣之前最好试穿一下。（try on）", "You'd better try it on before you buy a shirt."]
         ],
         "lesson_8": [
             ["在西方人看来，与人交谈时不看着对方的眼睛是很不礼貌的。（have a conversation）", "To Westerners, it is very impolite not to look at his or her eyes while having a conversation with him or her."],
@@ -70,7 +72,7 @@ words = {
         ],
         "lesson_12": [
             ["如果他一开始谈论过去，你就永远都没法从他那儿脱身。（get away from）", "If he starts talking about the past, you'll never get away from him."],
-            ["冬天失业率有上升的趋势。（tendency）", "There is a tendency for job losses to rise in the winter."],
+            ["冬天失业率有上升的趋势。（tendency）","There is a tendency for job losses to rise in the winter."],
             ["在我不断地要求下，父亲终于同意和我一起去澳大利亚了。（frequent）", "Because of my frequent demands, father finally agreed to go to Australia with me."],
             ["他把老店卖了，开了一家新店，以便赚更多的钱。（make money）", "He sold his shop and opened a new one to make more money."]
         ],
@@ -81,10 +83,10 @@ words = {
             ["我一提到他的名字，母亲就变得很不开心。（as soon as）", "As soon as I mentioned his name, my mother became very unhappy."]
         ],
         "lesson_14": [
-            ["当时的局面很艰难,但她顺利地应付过去了。(deal with)", "It was a difficult situation but she dealt with it successfully."],
-            ["学校和家长不应该只关注考试的结果。(focus on)", "Schools and parents should not focus only on exam results."],
-            ["我们应该明白，年轻人时不时地犯错是很正常的。(every now and then)", "We need to understand that it's common for young people to make mistakes every now and then."],
-            ["这位母亲从不在孩子们面前说中文，他们因此习惯了听她说英语。(be used to)", "The mother never speaks Chinese in front of her children, so that they are used to hearing English from her"],
+            ["只要你经常锻炼， 你又会变得健康起来。（as long as）", "As long as you get regular exercise, you will become healthy again."],
+            ["我一直想读一本有关太空的书，但是我好像总没时间去读。（get around to）", "I have always been thinking of reading a book on space, but I never seem to get around to it."],
+            ["那位作家自从买了电脑后，就再也不用笔写小说了。（no longer）", "Since the writer had bought the computer, he no longer wrote his stories with a pen."],
+            ["学校制定了一些新的规章制度，人人必须遵守。（set up）", "The school has set up some new rules that everybody must follow."],
         ],
         "lesson_15": [
             ["看见大海，孩子们开心得大叫起来。（at the sight of）", "The children cried with delight at the sight of the sea."],
@@ -99,10 +101,10 @@ words = {
             ["我们的产品在过去几年中逐渐受到欢迎。（little by little）", "Our products have become popular little by little over the past few years."]
         ],
         "lesson_17": [
-            ["患重病常常导致失去自信和自尊。(resultin)", "Serious illness often resultsin a loss of confidence and self-respect."],
-            [".犯罪常常和贫穷以及失业有关。(be related to)", "Crime is often related to poverty and unemployment."],
-            ["琼斯先生以前是百万富翁，他不甘心接受贫穷。(come to terms with)", "Mr. Jones was once a millionaire and he can't come to terms with being poor."],
-            ["快一点,我们没时间了。(run out)", "Hurry up! We are running out our time."]
+            ["我们明天就该开始进行那个项目了，可你却还没有准备好。（work on）", "We are supposed to start working on that project tomorrow, but you haven't got things ready."],
+            ["我今晚得把工作赶完，所以我不能和你一起去看电影了。（catch up on）", "I have to catch up on my work tonight, so I can't go to the movies with you."],
+            ["约翰不习惯这儿的新生活，所以打算搬走。（be accustomed to）", "John wants to move because he is not accustomed to the new life here."],
+            ["她伸手拿起电话，拨了一个朋友的号码。（reach for）", "She reached for her telephone and dialed the number of a friend."]
         ],
         "lesson_18": [
             ["这个计划听起来虽然很难，但他决心将它付诸实施。（put something into practice）", "Difficult as the plan sounds, he is determined to put it into practice."],
@@ -111,7 +113,7 @@ words = {
             ["他虽然没有直说，但我们能从他的手势中得到一些信息。（pick up）", "Although he didn't say it directly, we could pick up some messages from his gestures."]
         ],
         "lesson_19": [
-            ["我们必须想出解决这个问题的办法。（figure out）", "We must figure out how to solve the problem."],
+            ["我们必须想出解决这个问题的办法。（figure out）", "We must figure out how to solve the problem. OR: We must figure out the solutions to the problem."],
             ["他看着包，像是在看着一件他看不懂的东西。（beyond one's comprehension）", "He looked at the bag as if he were looking at something beyond his comprehension."],
             ["我会使用计算机，但是说到修计算机，我是一无所知。（come to）", "I know how to use a computer, but when it comes to repairing it, I know nothing about it."],
             ["我们迷了路，更糟的是，天开始下雨了。（what's worse）", "We got lost. What's worse, it started to rain."]
@@ -125,68 +127,93 @@ words = {
     }
 }
 
-print("请输入你想使用的功能的序号：")
-print("1.单元考核")
-print("2.全局随机抽考")
-print("请输入1或2")
-func_select = int(input())
+class EntryWithPlaceholder(Entry):
+    def __init__(self, master=None, placeholder="", color='grey'):
+        super().__init__(master)
 
-if func_select == 1:
-    while True:
-        lesson = input("请输入你想考核的单元.\n")
-        try:
-            lesson = int(lesson)
-            if lesson > 20:
-                print("数值超出支持范围, 支持(1-20)")
-                continue
-            else:
-                break
-        except Exception as e:
-            print("未知错误")
+        self.placeholder = placeholder
+        self.placeholder_color = color
+        self.default_fg_color = self['fg']
+        self.bind("<FocusIn>", self.foc_in)
+        self.bind("<FocusOut>", self.foc_out)
 
-    random_arr = []
-    while True:
-        if len(random_arr) == 4:
-            break
-        random_num = random.randint(0, 3)
-        if random_num in random_arr:
-            continue
+        self.put_placeholder()
+        self.place(width=100)
+
+    def put_placeholder(self):
+        self.insert(0, self.placeholder)
+        self['fg'] = self.placeholder_color
+
+    def foc_in(self, *args):
+        if self['fg'] == self.placeholder_color:
+            self.delete('0', 'end')
+            self['fg'] = self.default_fg_color
+
+    def foc_out(self, *args):
+        if not self.get():
+            self.put_placeholder()
+
+def submit_answer():
+    messagebox.showinfo("ok", answerBox.answer_entry.get())
+    pass
+
+def answer_function(geometry, title, questions):
+    answerBox = Tk()
+    answerBox.geometry(geometry)
+    answerBox.title(title)
+    answerBox.resizable(width=False, height=False)
+
+    for i in range(0, len(questions)):
+        Label(answerBox, text=questions[i][0], justify=CENTER, font=('Arial', 15), height=3).pack()
+        answer_entry = EntryWithPlaceholder(answerBox)
+        answer_entry.insert(END, "请输入答案")
+        answer_entry.pack()
+
+        ttk.Button(answerBox, text="提交", command="").pack()
+    answerBox.mainloop()
+
+def lesson_test():
+    lesson_select_num = lesson_input.get()
+    try:
+        if lesson_select_num != "":
+            lesson_select_num = int(lesson_select_num)
+            random_arr = []
+            while True:
+                if len(random_arr) == 4:
+                    break
+                random_num = random.randint(0, 3)
+                if words["words"]["lesson_{}".format(lesson_select_num)][random_num] in random_arr:
+                    continue
+                else:
+                    arr = words["words"]["lesson_{}".format(lesson_select_num)][random_num]
+                    random_arr.append(arr)
+            answer_function(geometry="700x500", title="考核", questions=random_arr)
         else:
-            arr = words["words"]["lesson_{}".format(lesson)][random_num]
-            answer = input(arr[0] + "\n")
-            print("{}".format(arr[1]))
-            if answer.lower() == arr[1].lower():
-                print("正确")
-            else:
-                print("请确认是否正确")
-            print(" ")
-            random_arr.append(random_num)
+            messagebox.showerror("Error", "输入框不可为空!")
+    except Exception as e:
+        messagebox.showerror("Error", e)
 
-elif func_select == 2:
+def global_test():
+    pass
 
-    words_exist = []
-    count = 0
+if __name__ == "__main__":
+    main = Tk()
+    main.resizable(width=False, height=False)
+    main.geometry('350x200')
+    main.title("专升本英语翻译考核程序")
 
-    print("请输入你想考核的个数:")
-    exam_num = int(input())
+    title = Label(main, text="专升本英语翻译考核程序", justify=CENTER, font=('Arial', 20), height=3).pack()
 
-    while True:
-        lesson_random = random.randint(1, 20)
-        words_random = random.randint(0, 3)
+    lesson_input = EntryWithPlaceholder(main)
+    lesson_input.insert(END, "输入1-20以进行考核...")
+    lesson_input.pack()
+    lesson_random = ttk.Button(main, text="单元测试", command=lesson_test, width=15)
+    lesson_random.grid(row=5)
+    lesson_random.pack()
 
-        if count == exam_num:
-            break
+    test_num = EntryWithPlaceholder(main)
+    test_num.insert(END, "请输入抽考个数...")
+    test_num.pack()
+    global_random = ttk.Button(main, text="全局随机抽考", command=global_test, width=15).pack()
 
-        if [lesson_random, words_random] in words_exist:
-            continue
-        else:
-            arr = words["words"]["lesson_{}".format(lesson_random)][words_random]
-            answer = input(arr[0] + "\n")
-            print("{}".format(arr[1]))
-            if answer.lower() == arr[1].lower():
-                print("正确")
-            else:
-                print("请确认是否正确")
-            print(" ")
-            words_exist.append([lesson_random, words_random])
-            count += 1
+    main.mainloop()
