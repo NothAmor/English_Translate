@@ -21,16 +21,16 @@ words = {
             ["我们应该听从这位老人的劝告，现在就回家去。（take someone's advice）", "We should take the old man's advice and go home right now."]
         ],
         "lesson_4": [
-            ["老师对学生上课迟到很生气，就把那些迟到的学生关在了门外。(shut out)", "The teacher felt soangry with the students for being late that he/she shut them out."],
-            ["小男孩伸出一只手去拿桌子上的书。(reach for)", "The young boy reached for the book on the desk with one of his hands"],
-            ["你们不应该在上班时间玩电脑游戏。(at work)", "You are not supposed to play computer games while at wo"],
+            ["老师对学生上课迟到很生气，就把那些迟到的学生关在了门外。(shut out)", "The teacher felt so angry with the students for being late that he/she shut them out."],
+            ["小男孩伸出一只手去拿桌子上的书。(reach for)", "The young boy reached for the book on the desk with one of his hands."],
+            ["你们不应该在上班时间玩电脑游戏。(at work)", "You are not supposed to play computer games while at work."],
             ["经理亲自出马参加面试。(in person)", "The manager took part in the interview in person."]
         ],
         "lesson_5": [
             ["二十年后，李娜脱颖而出成为中国最伟大的女子网球运动员。(stand out)", "Twenty years later, Li Na stands out as the greatest woman tennis player in China."],
-            ["老师鼓励这个男孩学画画，并告诉他说他是独一无二的。(one-of-a-kind)", "The teacher encouraged the boy to learn to draw and told him he was one-of-a-kind"],
+            ["老师鼓励这个男孩学画画，并告诉他说他是独一无二的。(one-of-a-kind)", "The teacher encouraged the boy to learn to draw and told him he was one-of-a-kind."],
             ["如果你不喜欢这个计划，你可以退出。(drop out)", "If you don't like the plan, you can drop out."],
-            ["难道你相信他？我敢肯定他知道的比他说出来的多。(let on)", "Do you believe him?I'm sure he knows more than he's letting on."]
+            ["难道你相信他？我敢肯定他知道的比他说出来的多。(let on)", "Do you believe him? I'm sure he knows more than he's letting on."]
         ],
         "lesson_6": [
             ["政府要在附近（neighborhood）建一个新的购物中心。（put up）", "The government is going to put up a new shopping center in the neighborhood."],
@@ -125,13 +125,342 @@ words = {
     }
 }
 
-print("请输入你想使用的功能的序号：")
-print("1.单元考核")
-print("2.全局随机抽考")
-print("请输入1或2")
-func_select = int(input())
+single_choice = {
+    "single_choice": {
+        "lesson_1": [[
+            ["A good____is the first step to a good job.", "A.education  B.unit  C.text  D.subject", "A"],
+            ["College education provide more____for a bright future", "A.lessons B.courses C.opportunities D.subjects", "C"],
+            ["He had a___to his wife who gave him the money to start his business.", "A.job B.debt C.chance D.career", "B"],
+            ["A____is helpful in looking for a job,but it doesn’t mean a job.", "A.certificate B.grade C.record D.debt", "A"],
+            ["If you think getting a certificate means getting a job,you are____yourself. ", "A.keeping B.having C.cheating D.doing", "C"],
+            ["Try to have a real_____of the course.Having it on your record doesn’t mean much.", "A.understanding B.understand C.knowing D.know", "A"],
+            ["To be honest with yourself is to_______yourself.", "A.look at B.do C.refuse D.respect", "D"],
+            ["People often end their letters with “Yours_____”.", "A.truly B.true C.very D.real", "A"]
+        ]],
+        "lesson_2": [[
+            ["All the students in Mrs.Black’s class are working very hard in order to_____themselves in English.", "A. expect B.compare C.improve D.learn", "C"],
+            ["We all know that Chinese is our ____ language.", "A. normal B. lucky        C. nice        D. native", "D"],
+            ["All the parents are happy that the school  ____  its students with a free lunch.", "A. provides B. masters C. figures   D. teaches", "A"],
+            ["I can finish reading a novel in one day if its story  ____ me very much.", "A. understands B. interests C. improves D. respects", "B"],
+            ["College students are expected to  ____ second language.", "A. attend       B. adjust   C. master   D. suppose", "C"],
+            ["Children learn from watching their parents, in ____ to asking questions.", "A. education B. subject  C. reason  D. addition", "D"],
+            ["If you have sleep trouble, a doctor can help you ____ out why it’s happening.", "A. figure      B. decide   C. account D. manage", "A"],
+            ["It’s normal to spend two or three years working in one’s own country before working ____", "A. outside      B. overseas   C. at home   D. inside", "B"]
+        ]],
+        "lesson_3": [[
+            ["The____of this country comes from its oil.", "A. wealth  B. view  C. sympathy  D. tale", "A"],
+            ["They agreed to meet the____week in the People’s Park", "A.exact  B.following  C.early  D.late", "B"],
+            ["Generally speaking(一般来说），views on this subject_____widely", "A.manage  B.succeed  C.graduate  D.differ", "D"],
+            ["The sick old man asked the doctor for____ to get better soon.", "A.award  B.advice  C.situation  D.sheet", "B"],
+            ["We were all______to hear the news that Tom,the silly boy,had won an award.", "A.fluent  B.rude  C.amazed  D.successful ", "C"],
+            ["Tony often____with his wife about money.", "A.argues B.interviews  C.embarrasses  D.improves ", "A"],
+            ["The little girl got much____from her father when she told him about her pains", "A.detail  B.energy  C.sympathy  D.suggestion ", "C"],
+            ["I’ve learned from my uncle that dogs______people by their smell.", "A.improve  B.recognize  C.expect  D.teach", "B"]
+        ]],
+        "lesson_4": [[
+            ["The driver fell ____ while driving and killed an old man.", "A. sleeping B. asleep C. to sleep D. a sleep", "B"],
+            ["Changes were taking place, though at the time no one fully ____ how important these changes were to be", "A. appreciated B. expected C. touched D. begged", "A"],
+            ["The mother told her son to _____ putting himself in danger.", "A. run away B. go away C. avoid D. keep away", "C"],
+            ["When I was young, I was silly enough to_______ my teachers to know everything.", "A. tell B. ask C. beg D. expect", "D"],
+            ["Jack waved his hand as he continued to ______ at the pre-war photograph of the two men.", "A. see B. watch C. touch D. stare", "D"],
+            ["A newborn baby needs _____ care and attention", "A. constant B. fluent C. amazed D. pretty", "A"],
+            ["He drew me closer until our bodies were ____.", "A. avoiding B. proceeding C. touching D. expecting", "C"],
+            ["The company has ____ a new toy and it sells well in the market.", "A. worked B. taken C. opened D. designed", "D"]
+        ]],
+        "lesson_5": [[
+            ["She expects to defend her ____ successfully in the next Olympics (奥林匹克运动会).", "A. tournament B. title C. prize D. personality", "B"],
+            ["The defending World Cup ____ was fastest in practice", "A. coach B. title C. champion D. fan", "C"],
+            ["He believes that this oil painting ____ among the best in the world.", "A. ranks B. appreciates C. includes D. requests", "A"],
+            ["She is living ____ that some players just get better with age.", "A. champion B. heroine C. proof D. memory", "C"],
+            ["I had come to know that our Italian ____ had spent many years in New York.", "A. personality B. host C. generation D. double", "B"],
+            ["I feel that I can help singers, especially the younger ____ .", "A. champion B. coach C. guy D. generation", "D"],
+            ["As a secretary, I have to do lots of things, ____ making coffee for the boss.", "A. including B. in addition C. instead of D. except", "A"],
+            ["He’s through to the men’s tennis ____ for the first time.", "A. tournament B. final C. prize D. court", "B"]
+        ]],
+        "lesson_6": [],
+        "lesson_7": [[
+            ["There's no supermarket in the ____ area.", "A. immediate  B. temporary  C. recent  D. brief", "A"],
+            ["It should also be noted that this issue has aroused the interest of the academic ____ in this country.", "A. club  B. federation  C. organization  D. community", "D"],
+            ["He likes to rub shoulders with the students, letting them ____ his happiness.", "A. share  B. create  C. prefer  D. imagine", "A"],
+            ["Families, ____ those with young children, have learned a lot from the program.", "A. especial  B. especially  C. particular  D. really", "B"],
+            ["I would ____ it if we had a bigger house, but we are not able to buy one.", "A. create  B. prefer  C. share  D. surround", "B"],
+            ["Project Hope is a(n) ____ that raises money to build schools and buy books for children in poor areas.", "A. community  B. club  C. organization  D. union", "C"],
+            ["Football fans ran onto the training field and ____ the famous coach.", "A. surrounded  B. shared  C. selected  D. gathered", "A"],
+            ["The new factory is expected to ____ more than 400 new jobs.", "A. make  B. find  C. create  D. take", "C"],
+        ], [
+            ["Speech is silver, _____ is golden.", "A. emotion  B. gesture  C. silence  D. conversation", "C"],
+            ["The three students ____ to help the disabled children at weekends.", "A. interrupt  B. participate  C. allow  D. volunteer", "D"],
+            ["Thousands of college students around the United States ____ in sports.", "A. participate  B. go  C. take  D. volunteer", "A"],
+            ["Most colleges will ____ students to change their subject choices in the early weeks of a semester.", "A. ruin  B. allow  C. prefer  D. appreciate", "B"],
+            ["The narrator in the story felt ____ when all the kids were staring at him in the silence.", "A. impaired  B. silent  C. bored  D. nervous", "D"],
+            ["A slight ____ of the door showed where she was hiding.", "A. movement  B. gesture  C. hug  D. desgin", "A"],
+            ["He was very upset because the heavy rain had ____ his painting.", "A. allowed  B. ruined  C. panicked  D. surrounded", "B"],
+            ["Don't ____ the speaker now; he will answer questions later.", "A. allow  B. ruin  C. interrupt  D. yell", "C"],
+        ]],
+        "lesson_8": [[
+            ["Born deaf(聋的),she could not use _____language to communicate with us.", "A.nonverbal  B.verbal  C.foreign  D.body", "B"],
+            ["Being a(n)_____of America,the famous movie star decided to run for US president.", "A.native  B.male  C.original  D.female", "A"],
+            ["One cannot _____across his thoughts to others well if he doesn’t master enough words.", "A.pass  B.hand  C.transport  D.put", "D"],
+            ["Could you give me more of his ____information before I agree to interview him?", "A.background  B.underground  C.back  D.behind", "A"],
+            ["His _____expression(表情) shows that he is unhappy about that", "A.body  B.hand  C.facial  D.verbal", "C"],
+            ["Mom always tells me to work more _____so that I can have more time to play and relax.", "A.efficient B.easily C.ease D.efficiently", "D"],
+            ["Though defeated,the guest team ____us to another match this Saturday.", "A.changed  B.wanted  C.challenged  D.made", "C"],
+            ["The teacher granted her the ____to be in charge of Group One at the spring-outing(春游).", "A.ability  B.authority  C.certificate  D.authorities", "B"]
+        ], [
+            ["You must have said something to ____her,as she was crying after talking with you", "A.defend  B.offend  C.confuse  D.direct", "B"],
+            ["Do you know why she looks so ____?She got high marks in the final examinations.", "A.cheerful  B.sad  C.angry  D.confused", "A"],
+            ["In America,making the ____gesture means”very good”.", "A.thumbs-down  B.small fingers-down  C.small fingers-up D.thumbs-up", "D"],
+            ["I didn’t have enough strength to ____him back from beating a man in this way.", "A.put  B.stop  C.hold  D.catch", "C"],
+            ["The country has experienced ____changes since the economic reform.", "A.little  B.directly  C.instantly  D.significant", "D"],
+            ["We’ve had many ____in working out this problem,so we need your help.", "A.difficulties  B.horror  C.trouble  D.issues", "A"],
+            ["This young man always thinks differently from the others,and what’s more,he even behaves in the ____way.", "A.against  B.opposite  C.across  D.another", "B"],
+            ["Without careful scientific research,how can they ____that there is no life on that planet (星球)?", "A.draw  B.include  C.result  D.conclude ", "D"]
+        ]],
+        "lesson_9": [[
+            ["In addition to working a full day at his _____, he has to take care of his family", "A.charge  B.company  C.career  D.cash", "B"],
+            ["The whole composition is good ____some careless mistakes.", "A.except for  B.except that  C.except  D.except from", "A"],
+            ["If you are not careful,you are going to ____the balloon.", "A.win  B.beat  C.empty  D.burst", "D"],
+            ["Airline personnel(员工)can buy ____tickets at reduced prices", "A.bus  B.train  C.flight  D.movie", "C"],
+            ["Six ____languages are used at the United Nations.", "A.national  B.official  C.native  D.authority", "B"],
+            ["We can visit you on Saturday or Sunday.Our plans are fairly ______.", "A.flexible  B.possible  C.impossible  D.personal," "A"],
+            ["Modern music may have a _____influence,as well as a positive(积极的) one on teenagers.", "A.good  B.poor  C.nice  D.negative", "D"],
+            ["His white hair was in sharp ____to his dark skin", "A.difference  B.contrast  C.opposite  D.background", "B"]
+        ]],
+        "lesson_10": [[
+            ["Students should be encouraged to be ___thinkers.", "A.independent  B.independence  C.advantage  D.average", "A"],
+            ["Charlie thinks money will _____all his problem", "A.perform  B.solve  C.score  D.force", "B"],
+            ["The doctor was____an operation to save the patient’s life", "A.acting  B.limiting  C.performing  D.assuming ", "C"],
+            ["New medicines are ____remarkable results in the treatment of cancer.", "A.finding  B.requiring  C.solving  D.producing", "D"],
+            ["You should read more books to enlarge (扩大)your ____.", "A.vocabulary  B.memory  C.brain  D.score ", "A"],
+            ["The good weather could be an important _____in tomorrow’s game.", "A.fact  B.factor  C.force  D.activity", "B"],
+            ["This kind of plant ____a lot of water at all times", "A.assumes  B.limits  C.produces  D.requires", "D"],
+            ["Soldiers are expected to ______orders", "A.obey  B.ask  C.do  D.fear", "A"]
+        ]],
+        "lesson_11": [],
+        "lesson_12": [],
+        "lesson_13": [[
+            ["The timetable says that the plane ____ off at 8:30 every morning.", "A. took  B. takes  C. is taking  D. had taken", "B"],
+            ["For the whole period of two months, there ____ no rain in this area, Now the crops are dead.", "A. is  B. was  C. has been  D. have been", "C"],
+            ["The man who spoke at the meeting yesterday ____ his brother.", "A. is  B. was  C. has been  D. had been", "A"],
+            ["Has he told you where he ____ his holiday next month?", "A. spent  B. has spent  C. will spent  D. would spend", "C"],
+            ["I will have a good time whether I ____.", "A. win or lose  B. won or lost  C. had won or lost  D. would win or lost", "A"],
+            ["He'll probably fly on the same plane as I ____ yesterday.", "A. have done  B. will do  C. did  D. do", "C"],
+            ["Will you tell us how you ____ to overcome the difficulties last week?", "A. have managed  B. had managed  C. will manage  D. managed", "D"],
+            ["She promised to give me whatever help I ____.", "A. will need  B. would need  C. had needed  D. was needing.", "B"]
+        ]],
+        "lesson_14": [],
+        "lesson_15": [],
+        "lesson_16": [],
+        "lesson_17": [],
+        "lesson_18": [],
+        "lesson_19": [],
+        "lesson_20": [],
+    }
+}
 
-if func_select == 1:
+word_select = {
+    "word_select": {
+        "lesson_1": [[
+            "credit,confuse,decide,sense,experience,dorm,saving,comfort,account,suppose", 
+            [
+                ["He has never been away from home.So being homesick is a new ____ to him.", "experience"],
+                ["A man should have a(n)____of responsibility for his family.", "sense"],
+                ["She is new here.She doesn’t know the way to her ____.", "dorm"],
+                ["Being on one’s own means making one’s own ____.", "decisions"],
+                ["The best way to keep one’s money safe is to put one’s ____ in a bank.", "savings"],
+                ["No ____ cards are accepted in this store.", "credit"],
+                ["He is ____ to come at nine o’clock.", "supposed"],
+                ["I have a nice, ____ room on the third floor", "comfortable"]
+        ]]],
+        "lesson_2": [[
+            "success,award,manage,interview,embarrass,accent,fluent,risk,reality,situation",
+            [
+                ["She speaks Japanese with a Chinese ____.", "accent"],
+                ["One of the firefighters(消防队员) won a(n) ____ for bravery（勇敢）", "award"],
+                ["Hard work and good ideas will lead to ____ in business.", "success"],
+                ["Mr.Black ____ famous people every week in his radio program.", "interviews"],
+                ["Some young men started smoking without realizing what the____were.", "risks"],
+                ["Tony Green has worked very hard to make his dream a(n) ____.", "reality"],
+                ["Ann speaks ____ Japanese,as she has lived there for three years.", "fluent"],
+                ["The box was very heavy,but Tom still ____ to carry it home.", "managed"]
+            ]
+        ]],
+        "lesson_3": [[
+            "various,relative,obvious,secretly,fashionable,whenever,realize,inviation,department,error",
+            [
+                ["The men from the two countries met ____ because they didn’t want the public(公众）to know about their meeting.", "secretly"],
+                ["It was ____ to everyone that the child had been badly treated.", "obvious"],
+                ["The teachers are discussing the good points and weak points of ____teaching methods", "various"],
+                ["This hat style is now liked by ____ women in Paris", "fashionable"],
+                ["Mr.White has got a wedding ____ from his friend in Paris", "invitation"],
+                ["I soon ____ that I had made a silly mistake.", "realized"],
+                ["You can use my computer____you like.", "whenever"],
+                ["The computer made a(n)____on my phone bill(账单）", "error"]
+            ]
+        ]],
+        "lesson_4": [[
+            "modern,request,machine,service,electric,greet,regular,alive,item,memory",
+            [
+                ["The parents _____ their children to go to bed before 10 p.m.", "request"],
+                ["They are ____ customers to the supermarket, and they know where to get what they need at once.", "regular"],
+                ["All the parents are happy that the school provides the best ____ for its students in the dorm.", "service"],
+                ["The data (数据) is stored in the computer’s _____ .", "memory"],
+                ["It was hard to believe that the boy was still ____ after the air crash", "alive"],
+                ["The development of ____ society also brings about many problems.", "modern"],
+                ["Nowadays I am a lot better placed and able to eat better because of the ____ cooker (锅).", "electric"],
+                ["His suggestion about giving up this plan was ____ with silence.", "greeted"]
+            ]
+        ]],
+        "lesson_5": [[
+            "truth,retire,quality,outstanding,wonder,definite,available,influence,disease,ease",
+            [
+                ["Could you tell me the ____ about it?", "truth"],
+                ["-----Can I borrow some children’s books from the library?" + "\n" + "-----Sorry.I’m afraid they are not ____ now.", "available"],
+                ["The store-owner was fined（罚）＄500 for selling goods of low _____.", "quality"],
+                ["Can you give me a (n) ____ answer to this question?", "definite"],
+                ["Workers in that company would ____ with a good pension（养老金）", "retire"],
+                ["No one ____ him as much as his father did in forming his personality（个性）.", "influenced"],
+                ["He was sent to a hospital because of a serious ____.", "disease"],
+                ["Albert Einstein（爱因斯坦）is one of the most ____ scientists of the 20th century", "outstanding"]
+            ]
+        ]],
+        "lesson_6": [
+            [
+                "habit,importance,electric,involve,recent,tradition,celebrate,measure,cheer",
+                [
+                    ["The good news got ____ from the audience", "cheers"],
+                    ["These factories will take every possible ____ to reduce pollution（减少污染）.", "measure"],
+                    ["Waterfalls（瀑布）can be used to produce _____power.", "electric"],
+                    ["Can you come to the party to ____ Jim’s graduation?", "celebrate"],
+                    ["It’s a(n) ____ to sing “Jingle Bells” at Christmas.", "tradition"],
+                    ["These classes help members learn how to change their eating ____.", "habits"],
+                    ["In some way, he ____ several of his friends in the trouble.", "involved"],
+                    ["In the end,he realized the ____ of foreign languages.", "importance"]
+                ]
+        ], [
+                "select,include,honor,attempt,simple,design,art,determine,develop,hang",
+                [
+                    ["Courses are not ____ merely for students to pass exams.", "designed"],
+                    ["Please ____ those details that you would like to change.", "select"],
+                    ["There is a long wire（电线）____ outside the window.", "hanging"],
+                    ["There are six people present at the meeting, ____ three women.", "including"],
+                    ["He ____ told her that he worked for the corporation（公司）.", "simply"],
+                    ["They accept what is happening without ____ to change it.", "attempting"],
+                    ["He was a great ____; he composed（创作）many great songs.", "artist"],
+                    ["These problems can appear in ____ and underdeveloped countries.", "developed"]
+                ]
+        ]],
+        "lesson_7": [[]],
+        "lesson_8": [[]],
+        "lesson_9": [[
+            "notice,standard,product,manager,fit,convenient,base,mystery,tend,hire",
+            [
+                ["We _____an advertising (广告) company to help sell our new product.", "hired"],
+                ["We need to improve the educational ______of this country.", "standards"],
+                ["Teamwork is _____on mutual(相互的)respect,trust,and understanding.", "based"],
+                ["A college graduate ____to show little interest in poorly-paid jobs.", "tends"],
+                ["The price of the new______is much higher than that of the old one.", "product"],
+                ["People used to build houses that _____the climate of their areas.", "fitted"],
+                ["They had a(n) ____guest at their party last night", "mystery"],
+                ["I’m willing to meet you on any day that is _____for you", "convenient"]
+            ]
+        ]],
+        "lesson_10": [[
+            "enter,compete,position,circle,taste,command,share,bear,prove,stage",
+            [
+                ["He _____ the church as a young man", "entered"],
+                ["The plan is still in its early ____.", "stage"],
+                ["I’ve always had a(n) ____ for the 19th-century America literature.", "taste"],
+                ["The captain(船长) of a ship ____ a heavy responsibility.", "bears"],
+                ["Mary is sociable and has a large ____ of friends.", "circle"],
+                ["Janet took ____ of the situation and got everyone out of the building.", "command"],
+                ["In order to ____ her point,she showed them the latest sales figures.", "prove"],
+                ["We haven’t enough books for everyone ;some of you will have to ____.", "share"]
+            ]
+        ]],
+        "lesson_11": [[
+            "damage,deny,public,inspect,actually,location,structure,claim,register,amount",
+            [
+                ["Bees communicate by dancing: for example, they do a kind of dance to tell other bees about the ____ of flowers.", "location"],
+                ["It was said that Nancy was going to marry a rich Englishman, but she ____ it", "denied"],
+                ["We need a huge ____ of money to build a new high school for the children in this area.", "amount"],
+                ["Since you broke the window, you should pay for the ____", "damage"],
+                ["People who fish and sail sometimes ____ to have seen strange animals in the sea.", "claim"],
+                ["He looks young, but ____ he is much the elder of the two.", "actually"],
+                ["The guard walked through the train ____ everyone’s ticket.", "inspecting"],
+                ["The new smart ____ could be very expensive to build. However, they would be less likely to be damaged during earthquakes. ", "structures"]
+            ]
+        ], [
+            "critical,defeat,uniform,oppose,admit,value,treat,replay,purchase,murder",
+            [
+                ["Among the decisions that most people make, ____ a house is perhaps the biggest one.", "purchasing"],
+                ["Don’t be ____ about him; he is a beginner.", "critical"],
+                ["Their basketball team had bad luck yesterday: it was their third ____ in four matches.", "defeat"],
+                ["It is human nature to be ____ to change because it requires us to cross over into the unknown.", "opposed"],
+                ["His works mirrored such positive ____ as cheerfulness and kindness.", "values"],
+                ["Highlights of the race were ____ on the news.", "replayed"],
+                ["The teacher was very popular among the students because he ____ them as his own children", "treated"],
+                ["When I asked the students if they’d like to have the lesson near the lake, I got a(n) ____ answer: “Yes!”", "uniform"]
+            ]
+        ]],
+        "lesson_12": [[
+            "weight,character,blind,justify,false,disorder,rate,control,concept,model",
+            [
+                ["Many people take exercise to lose ____ and change their body shapes.", "weight"],
+                ["The young man who had just come to work in the office was ____ as one of the few best employees in the company.", "rated"],
+                ["She looks ill, as she has been experiencing a sleeping ____ for some time.", "disorder"],
+                ["In my own life, I have developed some of both my mother’s and father’s ____.", "character"],
+                ["Dog owners have been required to keep their animals under ____.", "control"],
+                ["I understand some of the subject’s key ____, but I’m not sure about its details.", "concepts"],
+                ["The results of the study have certainly ____ the money that has been spent on the project.", "justified"],
+                ["What is known as “good reason” is the ability to judge rightly, separating the true from the ____.", "false"]
+            ]
+        ]],
+        "lesson_13": [[
+            "fiercely,purpose,achieve,wasteful,launch,billion,judge,headquarters,motivate,pretend", [
+            ["The ____ of buying this book was to improve my English.", "purpose"],
+            ["Some of my friends think it's ____ that I spend so much time reading blogs online.", "wasteful"],
+            ["The new company would have ____ in Frankfurt and New York.", "headquarters"],
+            ["You have first got to ____ the children and then to teach them.", "motivate"],
+            ["Money can help us to ____ our goals if we use it with care and understanding.", "achieve"],
+            ["She argued ____ with her husband. Then she packed up her things and went back to her mother's house to live.", "fiercely"],
+            ["India's population of more than a ____ people is widely expected to overtake the population of China by the middle of the 21st century.", "billion"],
+            ["If you ____ to know what you don't know, you'll only make a fool of yourself.", "pretend"],
+        ]]],
+        "lesson_14": [
+            ["unpleasant,inform,headline,replace,project,delay,urgently,successfully,absorb,separate", 
+            [
+                ["I juust glanced at the ____. I didn't have time to read the reports.", "headlines"],
+                ["The opening of the new subway may be ____ for several months.", "delayed"],
+                ["What a(n) ____ woman your colleague is, always complaining about one thing or another, never satisfied!", "unpleasant"],
+                ["These e-books are not going to ____ the printed books, because many people believe that paper books just feel good in their hands.", "replace"],
+                ["The boss asked his secretary to keep him well ____ of the program's progress.", "informed"],
+                ["The children were ____ into groups for the game.", "separated"],
+                ["Our boss is leaving on a trip and needs those papers ____.", "urgently"],
+                ["The little boy was so ____ in a picture book that he did not hear the bell.", "absorbed"],
+        ]], [
+            "locate,convince,delight,favorite,enclose,confident,delicious,bare,previous,particularly", [
+                ["I have been busy recently, ____ this week.", "particularly"],
+                ["The bacon sandwich is still a national ____.", "favorite"],
+                ["On the ____ night, she had promised not to say a word, but the next day, the whole town knew the secret.", "previous"],
+                ["Mary is ____ that love rather than money is the key to happiness.", "convinced"],
+                ["I thought the whole meal was good and the soup was particularly ____.", "delicious"],
+                ["The first Mcdonald's restaurant is ____ in Downey, Southern California.", "located"],
+                ["I was ____ when I knew my best friend had won the race.", "delighted"],
+                ["In contrast to your belief that we will fail, I am ____ that we will succeed.", "confident"],
+            ]
+        ]],
+        "lesson_15": [[]],
+        "lesson_16": [[]],
+        "lesson_17": [[]],
+        "lesson_18": [[]],
+        "lesson_19": [[]],
+        "lesson_20": [[]],
+    }
+}
+
+# 句子考核单元考察
+def words_1():
     while True:
         lesson = input("请输入你想考核的单元.\n")
         try:
@@ -162,8 +491,8 @@ if func_select == 1:
             print(" ")
             random_arr.append(random_num)
 
-elif func_select == 2:
-
+# 句子考核随机抽考
+def words_2():
     words_exist = []
     count = 0
 
@@ -190,3 +519,272 @@ elif func_select == 2:
             print(" ")
             words_exist.append([lesson_random, words_random])
             count += 1
+
+# 单选考核, 如果单元内只有一个Section有单选的函数
+def length_1(lesson):
+    random_arr = []
+    while True:
+        lesson_len = len(single_choice["single_choice"]["lesson_{}".format(lesson)][0])
+
+        if len(random_arr) == lesson_len:
+            break
+        random_num = random.randint(0, lesson_len - 1)
+        if random_num in random_arr:
+            continue
+        else:
+            arr = single_choice["single_choice"]["lesson_{}".format(lesson)][0][random_num]
+            answer = input(arr[0] + "\n" + arr[1] + "\n")
+            print("正确答案: {}".format(arr[2]))
+            if answer.lower() == arr[2].lower():
+                print("正确")
+            else:
+                print("请确认是否正确")
+            print(" ")
+            random_arr.append(random_num)
+
+# 单选考核, 如果单元内有两个Section都是单选, 并且选择了单个Section, 则进入这个函数
+def single_choice_section_select(lesson, section):
+    if section == 1:
+        section = 0
+    elif section == 2:
+        section = 1
+
+    random_arr = []
+    while True:
+        lesson_arr = single_choice["single_choice"]["lesson_{}".format(lesson)][section]
+        lesson_len = len(lesson_arr)
+
+        if len(random_arr) == lesson_len:
+            break
+        random_num = random.randint(0, lesson_len - 1)
+        if random_num in random_arr:
+            continue
+        else:
+            arr = lesson_arr[random_num]
+            answer = input(arr[0] + "\n" + arr[1] + "\n")
+            print("正确答案: {}".format(arr[2]))
+            if answer.lower() == arr[2].lower():
+                print("正确")
+            else:
+                print("请确认是否正确")
+            print(" ")
+            random_arr.append(random_num)
+
+# 单选考核, 如果选择了单元内两个Section合并考核就进入这个函数
+def single_choice_section_3(lesson):
+    random_arr = []
+    while True:
+        lesson_arr = single_choice["single_choice"]["lesson_{}".format(lesson)][0] + single_choice["single_choice"]["lesson_{}".format(lesson)][1]
+        lesson_len = len(lesson_arr)
+
+        if len(random_arr) == lesson_len:
+            break
+        random_num = random.randint(0, lesson_len - 1)
+        if random_num in random_arr:
+            continue
+        else:
+            arr = lesson_arr[random_num]
+            answer = input(arr[0] + "\n" + arr[1] + "\n")
+            print("正确答案: {}".format(arr[2]))
+            if answer.lower() == arr[2].lower():
+                print("正确")
+            else:
+                print("请确认是否正确")
+            print(" ")
+            random_arr.append(random_num)
+
+# 单项选择功能入口函数
+def single_choice_1():
+    while True:
+        lesson = input("请输入你想考核的单元.\n")
+        try:
+            lesson = int(lesson)
+            if lesson > 20:
+                print("数值超出支持范围, 支持(1-20)")
+                continue
+            else:
+                break
+        except Exception as e:
+            print("未知错误")
+
+    lesson_len = len(single_choice["single_choice"]["lesson_{}".format(lesson)])
+    if lesson_len == 1:
+        length_1(lesson)
+    elif lesson_len == 2:
+        print("---1.单元Section A考核")
+        print("---2.单元Section B考核")
+        print("---3.双Section合并考核")
+        print("---请输入1-3进行功能选择...")
+        while True:
+            func_select = int(input("请输入序号进行选择: "))
+            if func_select == 1:
+                single_choice_section_select(lesson, func_select)
+                break
+            elif func_select == 2:
+                single_choice_section_select(lesson, func_select)
+                break
+            elif func_select == 3:
+                single_choice_section_3(lesson)
+                break
+            else:
+                print("未知错误!")
+    elif lesson_len == 0:
+        print("此单元没有单项选择题!")
+
+# 单元内只有一个Section是选词填空的情况
+def word_select_single_length(lesson):
+    random_arr = []
+    lesson_arr = word_select["word_select"]["lesson_{}".format(lesson)][0]
+    words = lesson_arr[0].split(",")
+    print("")
+    print("单词列表:")
+    print(words[0:5])
+    print(words[5:])
+    print("")
+
+    while True:
+        lesson_len = len(lesson_arr[1])
+        if len(random_arr) == lesson_len:
+            break
+        random_num = random.randint(0, lesson_len - 1)
+        if random_num in random_arr:
+            continue
+        else:
+            arr = lesson_arr[1][random_num]
+            print(arr[0] + "\n")
+            answer = input("请输入答案: ")
+            print("正确答案: {}".format(arr[1]))
+            if answer.lower() == arr[1].lower():
+                print("正确")
+            else:
+                print("请确认是否正确")
+            print(" ")
+            random_arr.append(random_num)
+
+# 单元内有两个Section是选词填空的情况
+def word_select_both_length(lesson, section):
+    random_arr = []
+    lesson_arr = word_select["word_select"]["lesson_{}".format(lesson)][section]
+    words = lesson_arr[0].split(",")
+    print("")
+    print("单词列表:")
+    print(words[0:5])
+    print(words[5:])
+    print("")
+
+    while True:
+        lesson_len = len(lesson_arr[1])
+        if len(random_arr) == lesson_len:
+            break
+        random_num = random.randint(0, lesson_len - 1)
+        if random_num in random_arr:
+            continue
+        else:
+            arr = lesson_arr[1][random_num]
+            print(arr[0] + "\n")
+            answer = input("请输入答案: ")
+            print("正确答案: {}".format(arr[1]))
+            if answer.lower() == arr[1].lower():
+                print("正确")
+            else:
+                print("请确认是否正确")
+            print(" ")
+            random_arr.append(random_num)
+
+# 选词填空功能入口函数
+def word_select_1():
+    while True:
+        lesson = input("请输入你想考核的单元.\n")
+        try:
+            lesson = int(lesson)
+            if lesson > 20:
+                print("数值超出支持范围, 支持(1-20)")
+                continue
+            else:
+                break
+        except Exception as e:
+            print("未知错误")
+
+    lesson_len = len(word_select["word_select"]["lesson_{}".format(lesson)])
+    if lesson_len == 1:
+        word_select_single_length(lesson)
+
+    elif lesson_len == 2:
+        print("---1.单元Section A考核")
+        print("---2.单元Section B考核")
+        print("---请输入1-2进行功能选择...")
+        while True:
+            func_select = int(input("请输入序号进行选择: "))
+            if func_select == 1:
+                word_select_both_length(lesson, 0)
+                break
+            elif func_select == 2:
+                word_select_both_length(lesson, 1)
+                break
+            else:
+                print("未知错误!")
+    elif lesson_len == 0:
+        print("此单元没有选词填空题!")
+
+if __name__ == '__main__':
+    print("---请输入你想使用的功能的序号：")
+    print("---1.句子考核")
+    print("---2.选择题考核")
+    print("---3.选词填空题考核")
+    print("---请输入1-3进行功能选择...")
+    print("---程序制作By: 方一力")
+    print("")
+    func_select = int(input("请输入序号进行选择: "))
+    print("")
+
+    if func_select == 1:
+        print("---1.单元考核")
+        print("---2.全部单元随机抽考")
+        print("---请输入1-2进行功能选择...")
+        print("")
+
+        while True:
+            func_select = int(input("请输入序号进行选择: "))
+
+            if func_select == 1:
+                words_1()
+                break
+            elif func_select == 2:
+                words_2()
+                break
+            else:
+                print("未知错误!")
+
+    elif func_select == 2:
+        print("---1.单元考核")
+        print("---2.全部单元随机抽考")  # 没写完
+        print("---请输入1-2进行功能选择...")
+        print("")
+        while True:
+            func_select = int(input("请输入序号进行选择: "))
+
+            if func_select == 1:
+                single_choice_1()
+                break
+            elif func_select == 2:
+                words_2()
+                break
+            else:
+                print("未知错误!")
+    
+    elif func_select == 3:
+        print("---1.单元考核")
+        print("---2.全部单元随机抽考") # 没写完
+        print("---请输入1-2进行功能选择...")
+        print("")
+        while True:
+            func_select = int(input("请输入序号进行选择: "))
+
+            if func_select == 1:
+                word_select_1()
+                break
+            elif func_select == 2:
+                words_2() # 未完成
+                break
+            else:
+                print("未知错误!")
