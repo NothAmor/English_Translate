@@ -99,8 +99,8 @@ words = {
             ["我们的产品在过去几年中逐渐受到欢迎。（little by little）", "Our products have become popular little by little over the past few years."]
         ],
         "lesson_17": [
-            ["患重病常常导致失去自信和自尊。(resultin)", "Serious illness often resultsin a loss of confidence and self-respect."],
-            [".犯罪常常和贫穷以及失业有关。(be related to)", "Crime is often related to poverty and unemployment."],
+            ["患重病常常导致失去自信和自尊。(result in)", "Serious illness often results in a loss of confidence and self-respect."],
+            ["犯罪常常和贫穷以及失业有关。(be related to)", "Crime is often related to poverty and unemployment."],
             ["琼斯先生以前是百万富翁，他不甘心接受贫穷。(come to terms with)", "Mr. Jones was once a millionaire and he can't come to terms with being poor."],
             ["快一点,我们没时间了。(run out)", "Hurry up! We are running out our time."]
         ],
@@ -249,10 +249,28 @@ single_choice = {
             ["She promised to give me whatever help I ____.", "A. will need  B. would need  C. had needed  D. was needing.", "B"]
         ]],
         "lesson_14": [],
-        "lesson_15": [],
+        "lesson_15": [[
+            ["The speaker ____ for a moment, and then began to answer the question.", "A. shook  B. paused  C. pressed  D. tripped", "B"],
+            ["She is so strange. She always tries to ____ talking to me.", "A. prefer  B. protect  C. avoid  D. assure", "C"],
+            ["He suffered a serious ____ in the car crash, and died on the way to hospital.", "A. injury  B. accident  C. fall  D. attack", "A"],
+            ["It is unnecessary for those who study hard to consider that ____ of failing the exam.", "A. danger  B. warning  C. surprise  D. possibility", "D"],
+            ["We often ____ the happy time we spent at your home last summer.", "A. recall  B. remind  C. present  D. provide", "A"],
+            ["I'm ____ of his purpose in saying those words, but I don't want to argue with him.", "A. careless  B. conscious  C. content  D. confident", "B"],
+            ["While I was walking alone down the street, three man came up to me and asked me for ____ to the beach.", "A. contacts  B. contents  C. materials  D. directions", "D"],
+            ["Jack is among the brightest of his ____: He can speak several foreign languages and has won three national prizes.", "A. honor  B. ability  C. generation  D. edge", "C"]
+        ]],
         "lesson_16": [],
         "lesson_17": [],
-        "lesson_18": [],
+        "lesson_18": [[
+            ["It was reported that the earthquake was the most _____ to have struck that area in fifty years.", "A. special B. powerful C. favorite D. exciting", "B"],
+            ["It took the experts several months to decide on the ___ for the new airport.", "A. source B. earth C. site D. character", "C"],
+            ["The workers are repairing the house. It was _ _ by a fallen tree during the last storm.", "A. struck B. operated C. described D. calculated", "A"],
+            ["He was seriously injured in a car __ last year.", "A. shock B. crash C. passage D. mistake", "B"],
+            ["They were ____ to hear that their son had been arrested for taking drugs", "A. wandered B. ruined C. prepared D. shocked", "D"],
+            ["These events provided the ____ for her first novel.", "A. perspiration B. function C. inspiration D. strength", "C"],
+            ["Friends and neighbors can be a good __ of support to families who are experiencing difficulty.", "A. source B. genius C. quality D. equipment", "A"],
+            ["I failed to __ Sally to go with me to the party, so I went alone.", "A. handle B. achieve C. inspire D. persuade", "D"]
+        ]],
         "lesson_19": [],
         "lesson_20": [],
     }
@@ -450,10 +468,62 @@ word_select = {
                 ["In contrast to your belief that we will fail, I am ____ that we will succeed.", "confident"],
             ]
         ]],
-        "lesson_15": [[]],
-        "lesson_16": [[]],
-        "lesson_17": [[]],
-        "lesson_18": [[]],
+        "lesson_15": [
+            ["overcome,regret,satisfy,response,impatient,expression,insist,contrary,beneath,external", [
+                ["She was ____ by his sweet words.", "overcome"],
+                ["She was so _____ that she went to the kitchen three times to see whenether the fish had been cooked.", "impatient"],
+                ["The book was ____ the newspaper. That's why he couldn't find it at first.", "beneath"],
+                ["The ____ wall of the house was badly damaged by the storm", "external"],
+                ["The school ____ that it is doing everything it can to cooperate.", "insists"],
+                ["I'm not at all ____ with the service at the restaurant.", "satisfied"],
+                ["The results of the research were completely ____ to what we had expected.", "contrary"],
+                ["There was a sad ____ on her face when she said she had lost her new cellphone.", "expression"]
+            ]],],
+        "lesson_16": [
+            ["introduce,deliver,couple,advise,obtain,curious,degree,wisdom,funeral,microphone", [
+                ["Children are ____ about animals and how they live.", "curious"],
+                ["Without the ____, the speaker could hardly be heard.", "microphone"],
+                ["We ____ the new players to begin with something easy.", "advise"],
+                ["You need a doctor's ____ to join our project.", "degree"],
+                ["There was a ____ of things I wanted to discuss.", "couple"],
+                ["The first thing you need to learn here is how to ____ information.", "obtain"],
+                ["Only close relatives were allowed to attend the ____.", "funeral"],
+                ["Do you remember being ____ to Dr.Smith during your last visit.", "introduced"]
+            ]]],
+        "lesson_17": [
+            ["evidence,power,trust,pollute,unlikely,unusual,economic,sale,relate,widespread", [
+                ["It's _____ that she’ll arrive before seven.", "unlikely"],
+                ["Smoking is ____ to lung cancer and many diseases", "related"],
+                ["The report says ____ of new homes are up 20% over the last six months.", "sales"],
+                ["The police are gathering ____ to help them prove who killed the bank clerk.", "evidence"],
+                ["Many lakes and rivers have been _____ by industrial waste.", "polluted"],
+                ["The weather is ____ warm for this time of year.", "unusually"],
+                ["There are reports of ____ flooding in northern France", "widespread"],
+                ["You must ____ your own feelings and decide for yourself.", "trust"]
+            ]], [
+                "industrial,reduce,tour,contain,compare,declare,occasional,environment,expend,shift", [
+                    ["How much liquid do you think this bottle ____?", "contains"],
+                    ["We decided to buy the house after the seller ____ the price by ten percent.", "reduced"],
+                    ["If we ____ the furniture against the walls, we ‘ll have more space to dance.", "shift"],
+                    ["People are more concerned about ____ issues than before.", "environmental"],
+                    ["The building ____ a national monument in 1980.", "was declared"],
+                    ["He spent five years in Paris, with ____ visits to italy.", "occasional"],
+                    ["There are no plans to ____ the local airport.", "expand"],
+                    ["Germany is one of the world’s leading _____ nations", "industrial"]
+                ]
+            ]],
+        "lesson_18": [[
+            "overnight,remind,successful,ability,possess,mall,employ,addition,former,general", [
+                ["let’s meet at the _____ and go see a movie.", "mall"],
+                ["His reading _____ is very good for a child of six; he now can read short stories without any help from others.", "ability"],
+                ["In ____ times, there was a shop round the corner, but it has been pulled down.", "former"],
+                ["This is a big car-making company in the city and it ____ around ten thousand workers.", "employs"],
+                ["I ____ her how much the fare was.", "remind"],
+                ["I do not _____ a car; the one I drove to the party the other night belongs to Brown.", "possess"],
+                ["She is making very good preparations; she wants the meeting to be a really ____ one.", "successful"],
+                ["Don’t expect it to improve _____.", "overnight"]
+            ]
+        ]],
         "lesson_19": [[]],
         "lesson_20": [[]],
     }
