@@ -272,14 +272,23 @@ single_choice = {
             ["I failed to __ Sally to go with me to the party, so I went alone.", "A. handle B. achieve C. inspire D. persuade", "D"]
         ]],
         "lesson_19": [],
-        "lesson_20": [],
+        "lesson_20": [[
+            ["Unfortunately, we now have plenty of ____ that many children do not do half as well on tests as they actually could if they tried.", "A. evidence  B. blocks  C. suitability  D. instruction", "A"],
+            ["A foreigner's first ____ of the US is likely to be that everyone is in a rush-often under pressure.", "A. effect  B. entry  C. impression  D. addition", "C"],
+            ["The small country was destroyed by ten years of ____ fighting.", "A. impressive  B. active  C. slim  D. bitter", "D"],
+            ["The ____ with the most votes will be elected president of the association, whether he or she wins more than half the votes or not.", "A. emplyer  B. candidate  C. judge  D. assistant", "B"],
+            ["Under the team leader's ____, we did very well in the match.", "A. advice  B. hunt  C. suitability  D. guidance", "D"],
+            ["Being poor makes many people sad. But in the case of my father, it influences him ____", "A. otherwise  B. equally  C. suitably  D. additionally", "A"],
+            ["It's well accepted that we are able to ____ a person by what he or she says.", "A. compose  B. imply  C. judge  D. employ", "C"],
+            ["He is more ____ for the job than the other candidates because he has more experience in this field.", "A. favorable  B. suitable  C. equal  D. qualifying", "B"]
+        ]],
     }
 }
 
 word_select = {
     "word_select": {
         "lesson_1": [[
-            "credit,confuse,decide,sense,experience,dorm,saving,comfort,account,suppose", 
+            "credit,confuse,decide,sense,experience,dorm,saving,comfort,account,suppose",
             [
                 ["He has never been away from home.So being homesick is a new ____ to him.", "experience"],
                 ["A man should have a(n)____of responsibility for his family.", "sense"],
@@ -446,7 +455,7 @@ word_select = {
             ["If you ____ to know what you don't know, you'll only make a fool of yourself.", "pretend"],
         ]]],
         "lesson_14": [
-            ["unpleasant,inform,headline,replace,project,delay,urgently,successfully,absorb,separate", 
+            ["unpleasant,inform,headline,replace,project,delay,urgently,successfully,absorb,separate",
             [
                 ["I juust glanced at the ____. I didn't have time to read the reports.", "headlines"],
                 ["The opening of the new subway may be ____ for several months.", "delayed"],
@@ -524,8 +533,39 @@ word_select = {
                 ["Don’t expect it to improve _____.", "overnight"]
             ]
         ]],
-        "lesson_19": [[]],
-        "lesson_20": [[]],
+        "lesson_19": [
+            ["likewise,comprehension,helpful,disturb,effective,probably,urge,manufacture,feature,identify", [
+                ["He is a manager in a big company that ____ car parts.", "manufactures"],
+                ["I'm sorry to ____ you, but my car has broken down and I am wondering if I could use your phone.", "disturb"],
+                ["The most surprising ____ of the house was a large room as big as a swimming pool.", "feature"],
+                ["He was too far away to be able to ____ faces.", "identify"],
+                ["Just water these plants twice a week, and ____ the ones in the bedroom.", "likewise"],
+                ["How she manages to fit so much into a working day is beyond my ____.", "comprehension"],
+                ["I'll ____ start off for Hong Kong next week, but I'm not quite sure.", "probably"],
+                ["Sometimes, e-mail can be the most ____ form of communication, for messages can be exchanged within a very shor time.", "effective"]
+            ]],
+            ["organize,garage,traffic,electronic,channel,nowhere,skillfully,relax,engineer,schedule",
+                ["He broke his arm last year but he plays the piano as ____ as ever.", "skillfully"],
+                ["New measures about car control have been introduced to solve the ____ problem in the city.", "traffic"],
+                ["The computer contains a large number of ____ switches.", "electronic"],
+                ["We had a very tight ____ on the trip.", "schedule"],
+                ["In the winter break, I went ____ but stayed at home.", "nowhere"],
+                ["The students ____ a party to welcome the expert from England.", "organized"],
+                ["The doctor told him to ____ a month or so before going back to work.", "relax"],
+                ["My father likes watching TV and his favorite is the sports ____.", "channel"]
+            ]],
+        "lesson_20": [
+            ["prisoner,recommendation,eager,tiring,policy,joint,continually,readily,instinct,continual", [
+                ["Drivers are being warned that an escaped ____ has been seen on the way to Paris.", "prisoner"],
+                ["She's very ____ about sports: Among other things, she plays tennis twice a week.", "eager"],
+                ["New buildings have been springing up everywhere in cities and towns since China began to carry out the opening-up ____.", "policy"],
+                ["The ____ source of our strength was our mutual trust and respect.", "continually"],
+                ["We did it together; it was a ____ effort.", "joint"],
+                ["The best way of finding a lawyer is through personal _____.", "recommendation"],
+                ["People prefer to live in an area where transport is ____ available.", "readily"],
+                ["She knew by ____ that he would never come back if he went abroad.", "instinct"]
+            ]
+        ]],
     }
 }
 
@@ -841,7 +881,7 @@ if __name__ == '__main__':
                 break
             else:
                 print("未知错误!")
-    
+
     elif func_select == 3:
         print("---1.单元考核")
         print("---2.全部单元随机抽考") # 没写完
