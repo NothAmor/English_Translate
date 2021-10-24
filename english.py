@@ -16,7 +16,7 @@ words = {
         ],
         "lesson_3": [
             ["出于同情，布莱克太太（Mrs. Black）给了这位可怜的老人一些钱。（out of sympathy）", "Out of sympathy, Mrs. Black gave some money to the poor old man."],
-            ["英语教师指着一个苹果用英语对全班同学说：“这是一个苹果。”（point to）", "The English teacher pointed to an apple and said to the whole class in English: 'This is an apple'"],
+            ["英语教师指着一个苹果用英语对全班同学说：“这是一个苹果。”（point to）", "The English teacher pointed to an apple and said to the whole class in English: 'This is an apple'."],
             ["当我们互相帮助时，我们的房间里就充满了爱。（be filled with）", "Our room is filled with love when we help each other."],
             ["我们应该听从这位老人的劝告，现在就回家去。（take someone's advice）", "We should take the old man's advice and go home right now."]
         ],
@@ -41,8 +41,8 @@ words = {
         "lesson_7": [
             ["最好的办法是学生和老师都参与课外活动(get involved in)", "The best way is that both students and teachers get involved in extracurricular activities."],
             ["平安夜是全体家庭成员欢聚一堂的温馨(heart-warming)时刻。(gather together)", "Christmas Eve is a heart-warming time for the family members to gather together."],
-            ["我认为我们可以通过参加学校的社会活动接触社会和他人。(get in touch with)", "I think we can get in touch with the world and others through social activities on campus"],
-            ["人们住在这座古老的小镇里，生活简单安宁,四周树木环绕。(surround)", "People live in this old small town，having a simple and peaceful life，surrounded by trees"]
+            ["我认为我们可以通过参加学校的社会活动接触社会和他人。(get in touch with)", "I think we can get in touch with the world and others through social activities on campus."],
+            ["人们住在这座古老的小镇里，生活简单安宁,四周树木环绕。(surround)", "People live in this old small town，having a simple and peaceful life，surrounded by trees."]
         ],
         "lesson_8": [
             ["在西方人看来，与人交谈时不看着对方的眼睛是很不礼貌的。（have a conversation）", "To Westerners, it is very impolite not to look at his or her eyes while having a conversation with him or her."],
