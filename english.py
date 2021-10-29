@@ -222,7 +222,7 @@ single_choice = {
             ["If you are not careful,you are going to ____the balloon.", "A.win  B.beat  C.empty  D.burst", "D"],
             ["Airline personnel(员工)can buy ____tickets at reduced prices", "A.bus  B.train  C.flight  D.movie", "C"],
             ["Six ____languages are used at the United Nations.", "A.national  B.official  C.native  D.authority", "B"],
-            ["We can visit you on Saturday or Sunday.Our plans are fairly ______.", "A.flexible  B.possible  C.impossible  D.personal," "A"],
+            ["We can visit you on Saturday or Sunday.Our plans are fairly ______.", "A.flexible  B.possible  C.impossible  D.personal,", "A"],
             ["Modern music may have a _____influence,as well as a positive(积极的) one on teenagers.", "A.good  B.poor  C.nice  D.negative", "D"],
             ["His white hair was in sharp ____to his dark skin", "A.difference  B.contrast  C.opposite  D.background", "B"]
         ]],
@@ -377,8 +377,8 @@ word_select = {
                     ["These problems can appear in ____ and underdeveloped countries.", "developed"]
                 ]
         ]],
-        "lesson_7": [[]],
-        "lesson_8": [[]],
+        "lesson_7": [],
+        "lesson_8": [],
         "lesson_9": [[
             "notice,standard,product,manager,fit,convenient,base,mystery,tend,hire",
             [
